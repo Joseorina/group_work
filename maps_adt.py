@@ -40,12 +40,3 @@ class Map(dict):
     
     def __iter__(self):
         return iter(self.__dict__)
-    
-    
-            
-o = Map()
-o.foo = "bar"
-o['lumberjack'] = 'foo'
-o.update({'a': 'b'}, c=44)
-print ('lumberjack' in o)
-print(o)
