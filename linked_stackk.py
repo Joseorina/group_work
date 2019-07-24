@@ -1,26 +1,43 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+    
 class LinkedStack:
-    """
-    Stack implementation using a singly linked list for storage
-    """
-            
-    class _Node:
-        def __init__(self):
-            pass
-    
     def __init__(self):
-        pass
+        self.head = None
     
-    def __len__(self):
-        pass
+    def push(self, data):
+        if self.head is None:
+            self.head = Node(data)
+        else:
+            new_node = Node(data)
+            new_node.next = self.head
+            self.head = new_node
     
-    def check_empty_stack(self):
-        pass
+    def pop(self):
+        if self.head is None:
+            return None
+        else:
+            popped = self.head.data
+            self.head = self.head.next
+            return popped
+        
+_stack = LinkedStack()
+while True:
+    print('push <value>')
+    print('pop')
+    print('quit')
+    do = input('what would you like to do? ').split()
     
-    def push(self, element):
-        pass
-    
-    def pop(self, element):
-        pass
-    
-    def peek(self):
-        pass
+    operation = do[0].strip().lower()
+    if operation == 'push':
+        _stack.push(int(do[1]))
+    elif operation == 'pop':
+        popped = _stack.pop()
+        if popped is None:
+            print('Stack is empty')
+        else:
+            print('Popped value: ', int(popped))
+    elif operation == 'quit':
+        break
