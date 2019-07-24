@@ -7,6 +7,12 @@ class LinkedStack:
     def __init__(self):
         self.head = None
     
+    def __len__(self):
+        pass
+    
+    def is_empty(self):
+        pass
+    
     def push(self, data):
         if self.head is None:
             self.head = Node(data)
