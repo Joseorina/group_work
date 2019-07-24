@@ -3,6 +3,8 @@ class StackAdt:
     def __init__(self):
         """
         Initializing of an empty stack using an empty list data structure
+        Runtme:
+            O(n)
         """
         self.mystack = []
     
@@ -11,7 +13,9 @@ class StackAdt:
         Check whether the stack is empty
         
         Returns:
-            [list] -- []
+            [list] -- [empty list]
+        Runtime:
+                O(n)
         """
         return self.mystack == []
     
@@ -21,6 +25,8 @@ class StackAdt:
         
         Returns:
             [int] -- [length of the stack]
+        Runtime:
+                O(1)
         """
         return len(self.mystack)
     
@@ -33,6 +39,8 @@ class StackAdt:
         
         Returns:
             [int, str] -- [description]
+        Runtime:
+                O(1)
         """
         return self.mystack.append(data)
         
@@ -48,6 +56,8 @@ class StackAdt:
         
         Returns:
             [int,str] -- [description]
+        Runtime:   
+                O(1)
         """
         if self.mystack == []:
             raise Exception("Stack is empty")
@@ -63,6 +73,8 @@ class StackAdt:
         
         Returns:
             [int, str] -- [Top most data item in the stack]
+        Runtime:
+                O(1)    
         """
         if self.mystack == []:
             raise Exception("Stack is empty")
@@ -78,5 +90,7 @@ class StackAdt:
         
         Returns:
             [int, str] -- [description]
+        Runtime:
+                O(1)
         """
         return self.mystack.append(data)
