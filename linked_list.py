@@ -40,7 +40,7 @@ class LinkedStack:
             [Boolean] -- [Return True if stack is empty]
         
         Runtime:
-            O(1)
+            O(n)
         """
         return self.size == 0
     
@@ -52,7 +52,7 @@ class LinkedStack:
             data {[iterable]} -- [New element being added to stack]
         
         Runtime:
-            O(n)
+            O(1)
         """
         self.head = self.Node(data, self.head)
         self.size += 1
