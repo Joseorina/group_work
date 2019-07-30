@@ -18,5 +18,5 @@ def find_quadruplets(A, n, X):
 
 A = [7, 6, 4, -1, 1, 2]
 n = len(A)
-X = 0
+X = 16
 print(find_quadruplets(A, n, X))
