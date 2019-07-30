@@ -11,6 +11,8 @@ def two_sum(A, target):
     
     Returns:
         [Boolean] -- [True or False]
+    Runtime:
+        [O(n)]
     """
     x = 0
     y = len(A) -1

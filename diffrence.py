@@ -1,6 +1,20 @@
 import sys
 
 def find_smallest_differences(A, B, m, n):
+    """
+    Find the smallest diffrence given two arrays
+    
+    Arguments:
+        A {[int]} -- [array of integer values]
+        B {[int]} -- [array of integer values]
+        m {[int]} -- [length of array A]
+        n {[int]} -- [length of array B]
+    
+    Returns:
+        [result] -- [smallest diffrence of array]
+    Runtime:
+        [O(n2)]
+    """
     A.sort()
     B.sort()
     

@@ -1,5 +1,13 @@
 
 def find_triplets(A, result, r):
+    """
+    Find 3 integers that add up to a specified sum
+    
+    Arguments:
+        A {[int]} -- [Array of integers]
+        result {[int]} -- [expected sum of triplets]
+        r {[int]} -- [length of array]
+    """
     for i in range(len(A)-2):
         l = i + 1
         while (l < r):
