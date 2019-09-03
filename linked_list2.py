@@ -69,7 +69,7 @@ class LinkedList(object):
     def find(self, d):
         this_node = self.root
         while this_node is not None:
-            if this_node.get_next() == None:
+            if this_node.get_next() == d:
                 return d
             elif this_node.get_next() == None:
                 return False
